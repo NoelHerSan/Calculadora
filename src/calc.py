@@ -24,3 +24,16 @@ def get_fractions(valor):
         return float(valor)
     else:
         return 0
+        
+# Sum function
+def calc_sum(a,
+             b):
+    if isinstance(a, float) and isinstance(b, float):
+        return a + b
+    else:
+        sum_a = get_fractions(a)
+        sum_b = get_fractions(b)
+        if isinstance(sum_a, float) and isinstance(sum_b, float):
+            return sum_a + sum_b
+        else:
+            return message_error
