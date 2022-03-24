@@ -24,3 +24,16 @@ def get_fractions(valor):
         return float(valor)
     else:
         return 0
+       
+# multiplication function
+def calc_multiplication(a,
+                        b):
+    if isinstance(a, float) and isinstance(b, float):
+        return a * b
+    else:
+        multiplier = get_fractions(a)
+        multiplying = get_fractions(b)
+        if isinstance(multiplier, float) and isinstance(multiplying, float):
+            return multiplier * multiplying
+        else:
+            return message_error
